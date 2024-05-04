@@ -16,7 +16,7 @@ router.register("movies", MovieViewSet)
 router.register("cinema_halls", CinemaHallViewSet)
 router.register("movie_sessions", MovieSessionViewSet)
 
-urlpatterns = [path("", include(router.urls))]
+urlpatterns = router.urls
 
 
 app_name = "cinema"
